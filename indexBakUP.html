@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Fretboard SVG</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Dongle:wght@300&family=Hepta+Slab:wght@1..900&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<h1>
+    "Chords"
+</h1>
+
+<div class="custom-select" id="selectChord" onChange="createChord(noteSelection.value + typeSelection.value)">
+    <select class="select" id="noteSelection">
+        <option disabled selected value>  tom  </option>
+        <option value="C">C</option>
+        <option value="D">D</option>
+        <option value="E">E</option>
+        <option value="F">F</option>
+        <option value="G">G</option>
+        <option value="A">A</option>
+        <option value="B">B</option>
+        </select>
+
+        <select class="select" value="Maj" id="typeSelection">
+            <option disabled selected value>  modo  </option>
+            <option value="Maj" selected>Maj</option>
+            <option value="m">m</option>
+    </select>
+</div>
+<body>
+    <div class="fretboard">
+        <div class="changeColor">
+            <svg id = "svg_circles" height="800" width="2400" >
+            </svg>
+        </div>
+    </div>
+</body>
+
+<script src="main.js"></script>
+</html>

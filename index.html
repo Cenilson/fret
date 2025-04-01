@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chord Lib</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="icon" type="image/png" href="./images/favicon.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Dongle:wght@300&family=Hepta+Slab:wght@1..900&family=Montserrat&display=swap" rel="stylesheet">
+</head>
+<div class="flex-container">
+    <div>
+        <div class="buttonSelection" id="buttonSelection">
+            <button class="btnNote" id="buttonSelection" onclick="receiveNote('C')">C</button>
+            <button class="btnNote" id="buttonSelection" onclick="receiveNote('D')">D</button>
+            <button class="btnNote" id="buttonSelection" onclick="receiveNote('E')">E</button>
+            <button class="btnNote" id="buttonSelection" onclick="receiveNote('F')">F</button>
+            <button class="btnNote" id="buttonSelection" onclick="receiveNote('G')">G</button>
+            <button class="btnNote" id="buttonSelection" onclick="receiveNote('A')">A</button>
+            <button class="btnNote" id="buttonSelection" onclick="receiveNote('B')">B</button>
+            <button class="btnNote" id="buttonSelection" onclick="receiveNote('#')">#</button>
+        </div>
+        <div class="buttonSelection" id="typeSelectBtn">
+            <button class="btnType" onclick="receiveType('Maj')">Maj</button>
+            <button class="btnType" onclick="receiveType('m')">Min</button>
+            <!-- <button class="btnType" onclick="receiveType('sus4')">sus4 </button>
+            <button class="btnType" onclick="receiveType('Dom')">Dom</button>
+            <button class="btnType" onclick="receiveType('Dim')">Dim</button> -->
+        </div>
+        <!-- <div class="buttonSelection" id="variSelectBtn">
+            <button class="btnType" onclick="receiveVari('7')">7</button>
+            <button class="btnType" onclick="receiveVari('9')">9</button>
+            <button class="btnType" onclick="receiveVari('7sus4')">7sus4 </button>
+            <button class="btnType" onclick="receiveVari('9sus4')">9sus4</button>
+            <button class="btnType" onclick="receiveVari('13sus4')">13sus4</button>
+            <button class="btnType" onclick="receiveVari('13')">13</button>
+            <button class="btnType" onclick="receiveVari('#5')">#5</button>
+        </div> -->
+    </div>
+    <div class="chordDisplay" id="chordDisplay">
+        <p id="display"></p>
+    </div>
+</div>
+
+<body>
+    <div class="fretboard">
+        <div class="changeColor">
+            <svg id = "fretboard" height="200" width="1800" >
+            </svg>
+        </div>
+    </div>
+</body>
+<div class="buttonSelectionBottom" id="seqSelectBtn">
+    <button class="btnLR" onclick="receiveSeq('1')"><</button>
+    <button class="btnLR" onclick="receiveSeq('-1')">></button>
+</div>
+<script defer src="main.js"></script>
+</html>

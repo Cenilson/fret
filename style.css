@@ -1,0 +1,162 @@
+.flex-container {
+  width: 1800px;
+  height: 200px;
+  margin: auto;
+  padding-left: 50px;
+  padding-top: 80px;
+  padding-bottom: 30px;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.chordDisplay{
+  font-size: 90px;
+  padding-right: 100px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #c8dca5;
+}
+
+.fretboard {
+  width: 1800px;
+  height: 200px;
+  margin: auto;
+  background-color: rgb(15, 15, 15);
+  border-style: solid;
+  border-width: 0px;
+  border-radius: 0px 0px 25px 25px;
+  border-color: rgb(32, 32, 32);
+  background-image: url(./images/neck.svg);
+  background-repeat: no-repeat;
+}
+
+body {
+    /* background-color: rgb(254, 96, 65); */
+    background-color: rgb(15, 15, 15);
+}
+
+/* .select-section{
+    height: 300px;
+    width: 100%;
+}
+
+.select{
+    margin: auto;
+    height: 50px;
+    background-color: black;
+    font-family: "Hepta Slab", serif;
+    font-size: 14px;
+    color: aliceblue;
+} */
+
+.select-chords{
+    height: 100px;
+    width: 200px;
+    margin: auto;
+    text-align: center;
+    align-items: center;
+    background-color: rgb(165, 175, 173);
+    border-radius: 10px;
+}
+
+.custom-select {
+    position: relative;
+    font-family: Arial;
+  }
+
+/* .custom-select select {
+display: none; /*hide original SELECT element: } */
+
+.btnNote {
+    border: none;
+    background-color: #3b3b3b;
+    /* box-shadow: 2px 2px rgb(57, 57, 57); */
+    border-radius: 3px;
+    color: rgb(179, 179, 179);
+    padding: 15px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 0px;
+    cursor: pointer;
+  }
+
+  .btnNote {
+    transition-duration: 0.2s;
+  }
+  
+  .btnNote:hover {
+    background-color: #212121; /* Green */
+    /* color: aquamarine; */
+  }
+
+  .btnNote-clicked {
+    background-color: #212121; /* Green */
+    color: rgb(138, 255, 127);
+  }
+
+  .btnType {
+    border: none;
+    background-color: #3b3b3b;
+    /* box-shadow: 2px 2px rgb(57, 57, 57); */
+    border-radius: 3px;
+    color: rgb(179, 179, 179);
+    padding: 15px 22px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 0px;
+    cursor: pointer;
+  }
+
+  .btnType {
+    transition-duration: 0.2s;
+  }
+  
+  .btnType:hover {
+    background-color: #212121; /* Green */
+    /* color: aquamarine; */
+  }
+
+  .btnType-clicked {
+    background-color: #212121; /* Green */
+    color: rgb(138, 255, 127);
+  }
+
+  .buttonSelectionBottom {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .btnLR {
+    border: none;
+    background-color: #3b3b3b;
+    /* box-shadow: 2px 2px rgb(57, 57, 57); */
+    border-radius: 25px;
+    color: rgb(179, 179, 179);
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px;
+    cursor: pointer;
+  }
+
+  .btnLR {
+    transition-duration: 0.2s;
+  }
+  
+  .btnLR:hover {
+    background-color: #212121; /* Green */
+    /* color: aquamarine; */
+  }
+
+  .btnLR-clicked {
+    background-color: #212121; /* Green */
+    color: rgb(138, 255, 127);
+  }
+
+  /* rgb(255, 164, 7) */
