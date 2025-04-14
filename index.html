@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <title>Chord Lib</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="icon" type="image/png" href="./images/favicon.png">
@@ -14,14 +14,17 @@
 <div class="flex-container">
     <div>
         <div class="buttonSelection" id="buttonSelection">
-            <button class="btnNote" id="buttonSelection" onclick="receiveNote('C')">C</button>
-            <button class="btnNote" id="buttonSelection" onclick="receiveNote('D')">D</button>
-            <button class="btnNote" id="buttonSelection" onclick="receiveNote('E')">E</button>
-            <button class="btnNote" id="buttonSelection" onclick="receiveNote('F')">F</button>
-            <button class="btnNote" id="buttonSelection" onclick="receiveNote('G')">G</button>
-            <button class="btnNote" id="buttonSelection" onclick="receiveNote('A')">A</button>
-            <button class="btnNote" id="buttonSelection" onclick="receiveNote('B')">B</button>
-            <button class="btnNote" id="buttonSelection" onclick="receiveNote('#')">#</button>
+            <button class="btnNote" id="C" onclick="receiveNote('C')">C</button>
+            <button class="btnNote" id="D" onclick="receiveNote('D')">D</button>
+            <button class="btnNotSharp" id="E" onclick="receiveNote('E')">E</button>
+            <button class="btnNote" id="F" onclick="receiveNote('F')">F</button>
+            <button class="btnNote" id="G" onclick="receiveNote('G')">G</button>
+            <button class="btnNote" id="A" onclick="receiveNote('A')">A</button>
+            <button class="btnNotSharp" id="B" onclick="receiveNote('B')">B</button>
+            <button class="btnSharp" id="#" onclick="receiveSharp('#')">#</button>
+        </div>
+        <div>
+            
         </div>
         <div class="buttonSelection" id="typeSelectBtn">
             <button class="btnType" onclick="receiveType('Maj')">Maj</button>

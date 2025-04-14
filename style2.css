@@ -67,7 +67,7 @@ body {
 /* .custom-select select {
 display: none; /*hide original SELECT element: } */
 
-.btnNote {
+.btnNote, .btnSharp, .btnNotSharp {
     border: none;
     background-color: #3b3b3b;
     /* box-shadow: 2px 2px rgb(57, 57, 57); */
@@ -82,84 +82,31 @@ display: none; /*hide original SELECT element: } */
     cursor: pointer;
   }
 
-  .btnNote {
+  .btnNote, .btnSharp, .btnNotSharp {
     transition-duration: 0.2s;
   }
   
-  .btnNote:hover {
+  .btnNote:hover, .btnSharp:hover, .btnNotSharp:hover {
     background-color: #212121; /* Green */
     /* color: aquamarine; */
   }
 
-  .btnNote-clicked {
+  .btnNote-clicked, .btnNotSharp-clicked{
     background-color: #212121; /* Green */
     color: rgb(138, 255, 127);
   }
 
-  .btnSharp {
-    border: none;
-    background-color: #3b3b3b;
-    /* box-shadow: 2px 2px rgb(57, 57, 57); */
-    border-radius: 3px;
-    color: rgb(179, 179, 179);
-    padding: 15px 22px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 0px;
-    cursor: pointer;
-  }
-
-  .btnSharp {
-    transition-duration: 0.2s;
-  }
-  
-  .btnSharp:hover {
+  .btnSharp-clicked{
     background-color: #212121; /* Green */
-    /* color: aquamarine; */
-  }
-
-  .btnSharp-clicked {
-    background-color: #212121; /* Green */
-    color: rgb(138, 255, 127);
-  }
-
-  .btnNotSharp {
-    border: none;
-    background-color: #3b3b3b;
-    /* box-shadow: 2px 2px rgb(57, 57, 57); */
-    border-radius: 3px;
-    color: rgb(179, 179, 179);
-    padding: 15px 22px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 0px;
-    cursor: pointer;
-  }
-
-  .btnNotSharp {
-    transition-duration: 0.2s;
-  }
-  
-  .btnNotSharp:hover {
-    background-color: #212121; /* Green */
-    /* color: aquamarine; */
-  }
-
-  .btnNotSharp-clicked {
-    background-color: #212121; /* Green */
-    color: rgb(138, 255, 127);
+    color: rgb(255, 170, 58);
   }
 
   .btnNotSharp-disabled {
     border: none;
-    background-color: #0b0b0b;
+    background-color: #212121;
     /* box-shadow: 2px 2px rgb(57, 57, 57); */
     border-radius: 3px;
-    color: rgb(0, 0, 0);
+    color: #212121;
     padding: 15px 22px;
     text-align: center;
     text-decoration: none;
@@ -168,7 +115,6 @@ display: none; /*hide original SELECT element: } */
     margin: 4px 0px;
     cursor: pointer;
   }
-
 
   .btnType {
     border: none;
