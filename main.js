@@ -61,24 +61,31 @@ scaleDict = {
 //  MANTÉM APARÊNCIA DE BOTÃO "CLICADO" ----------
 // Aparência dos botões de notas (C, D, F, G, e A)
 const btnList = document.querySelectorAll('.btnNote');
+const btnList3 = document.querySelector('.btnSharp');
+const btnListNotSharp = document.querySelectorAll('.btnNotSharp');
 
 btnList.forEach(btnEl => {
     btnEl.addEventListener('click', () => {
         document.querySelector('.btnNotSharp-clicked')?.classList.remove('btnNotSharp-clicked');
         document.querySelector('.btnNote-clicked')?.classList.remove('btnNote-clicked');
         btnEl.classList.add('btnNote-clicked');
+        btnList3.classList.remove('btnNotSharp-disabled'); // o problema está aqui
+        btnList3.classList.add('btnSharp');
+        btnList3.removeAttribute('disabled');
+        console.log(btnEl)
     });
 });
 
-
-const btnList3 = document.querySelector('.btnSharp');
-const btnListNotSharp = document.querySelectorAll('.btnNotSharp');
-
+// Aparência dos botões de notas (E, B)
 btnListNotSharp.forEach(btnElNS => {
     btnElNS.addEventListener('click', () => {
         document.querySelector('.btnNotSharp-clicked')?.classList.remove('btnNotSharp-clicked');
         document.querySelector('.btnNote-clicked')?.classList.remove('btnNote-clicked');
         btnElNS.classList.add('btnNotSharp-clicked');
+        btnList3.classList.remove('btnSharp');
+        btnList3.classList.add('btnNotSharp-disabled');
+        btnList3.setAttribute('disabled', '');
+        console.log(btnList3)
     });
 });
 
@@ -133,6 +140,7 @@ btnList2.forEach(btnEl2 => {
 let listNote = ["C"];
 let listType = ["Maj"];
 let sharp = "";
+let keysEB = false;
 let listVari = [];
 
 let acorde = ["C", "Maj"]; // Faz com que o acorde de CMaj seja o primeiro a aparecer se for clicado o tipo de acorde

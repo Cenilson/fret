@@ -101,7 +101,7 @@ display: none; /*hide original SELECT element: } */
     color: rgb(255, 170, 58);
   }
 
-  .btnNotSharp-disabled {
+  .btnNotSharp-disabled, .btnSharp-disabled {
     border: none;
     background-color: #212121;
     /* box-shadow: 2px 2px rgb(57, 57, 57); */
